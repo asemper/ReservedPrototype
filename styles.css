@@ -1,0 +1,119 @@
+/* CSS Reset */
+
+/*
+
+Grey - R:112 G:112 B:112
+Green - R:68 G:216 B:68
+Font Family: Helvetica Neue
+-Regular
+-Italic
+-Light Italic 
+
+*/
+
+
+/* Typography */
+
+body {
+    font-family: 'Arimo', sans-serif;
+    color:rgb(112, 112, 112);
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+    color: rgb(112, 112, 112);
+}
+
+
+/* Global Styles  */
+
+
+
+
+/* Template Styles */
+
+
+
+
+/* Page Styles */
+
+.main-header {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.main-header .material-icons {
+    color: rgb(68, 216, 68);
+}
+
+.main-search {
+    border-radius: 0px;
+    border-color:#7c7b7b;
+    border-width: 2px;
+    height: 5rem;
+    /* background: url(images/iconSearch.png) no-repeat scroll 7px 7px;
+    background-position: right; */
+}
+
+.main-search::placeholder {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+.main-search:focus {
+    border-color: #898888 ;
+}
+
+.main-search-label::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(calc(2.25rem + 2px) - 1px * 2);
+    padding: .375rem .75rem;
+    color: #495057;
+
+}
+
+/* Custom Styles */
+
+
+/* -- Burger Nav Menu  */
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
