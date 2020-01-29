@@ -5,55 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>RESERVED</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">keyboard_arrow_right</i></a>
+        <a class="menu-item" href="#">sign up<i class="material-icons pull-right">how_to_reg</i></a>
+        <a class="menu-item" href="#">log in<i class="material-icons pull-right">exit_to_app</i></a>
+        <a class="menu-item" href="#">FAQ<i class="material-icons pull-right">help_outline</i></a>
+        <a class="menu-item" href="#">Order Status<i class="material-icons pull-right">list_alt</i></a>
+        <a class="menu-item" href="#">Contact<i class="material-icons pull-right">chat_bubble_outline</i></a>
+      </div>
+      <span class="burger-menu-button pull-right" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>
     </header>
     <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-          <h1 class="main-header">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</h1>
-        </div>      
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-          <div class="form-group">
-            <input type="search" class="form-control main-search" id="mainSearch" placeholder="#">
-            <label class="main-search-label"></label>
-            <!-- <span class="glyphicon glyphicon-search form-control-feedback"></span> -->
-          </div>
-        </div>      
+    <div class="content-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+            <h1 class="main-header">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+            <div class="form-group">
+              <input type="search" class="form-control main-search" id="mainSearch" placeholder="">
+              <label class="main-search-label"></label>
+              <!-- <span class="glyphicon glyphicon-search form-control-feedback"></span> -->
+            </div>
+          </div>      
+        </div>
       </div>
     </div>
   </body>
