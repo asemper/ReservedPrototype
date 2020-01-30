@@ -22,3 +22,15 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   animateCSS('.sidenav .material-icons', 'rotateOut')
 }
+
+// General Doc Ready JS Functions
+
+$( document ).ready(function() {
+  //close Nav on off-click
+  $( ".content-wrapper" ).click(function() {
+    if ($(".sidenav").width() > 0) {
+      closeNav();
+    }
+  });
+
+});
