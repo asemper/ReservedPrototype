@@ -15,27 +15,25 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-
   </head>
   <body>
     <header class="header">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">keyboard_arrow_right</i></a>
-        <a class="menu-item" href="#">sign up<i class="material-icons pull-right">how_to_reg</i></a>
-        <a class="menu-item" href="#">log in<i class="material-icons pull-right">exit_to_app</i></a>
-        <a class="menu-item" href="#">FAQ<i class="material-icons pull-right">help_outline</i></a>
-        <a class="menu-item" href="#">Order Status<i class="material-icons pull-right">list_alt</i></a>
-        <a class="menu-item" href="#">Contact<i class="material-icons pull-right">chat_bubble_outline</i></a>
-      </div>
-      <span class="burger-menu-button pull-right" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">keyboard_arrow_right</i></a>
+          <a class="menu-item" href="#">sign up<i class="material-icons pull-right">how_to_reg</i></a>
+          <a class="menu-item" href="#">log in<i class="material-icons pull-right">exit_to_app</i></a>
+          <a class="menu-item" href="#">FAQ<i class="material-icons pull-right">help_outline</i></a>
+          <a class="menu-item" href="#">Order Status<i class="material-icons pull-right">list_alt</i></a>
+          <a class="menu-item" href="#">Contact<i class="material-icons pull-right">chat_bubble_outline</i></a>
+        </div>
+        <span class="burger-menu-button pull-right" style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="material-icons">menu</i></span>
+      </nav>
     </header>
     <!-- Main Content -->
     <div class="content-wrapper">
       <div class="container">
-        <section>
+        <section class="main-section">
           <div class="row">
             <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
               <h1 class="main-header regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</h1>
@@ -51,14 +49,296 @@
             </div>      
           </div>
         </section>
-        <section>
-          <div class="row">
-            <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
-              <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span> <span class="light">is the online private auction for artists</span></h1>
-            </div>      
-          </div>
-        </section>
       </div>
     </div>
+    <!-- Site Info section - Parallax Scrolling -->
+    <!-- section 1 -->
+    <section class="info-section"  id="info-sec-1" style="opacity: 1;"> 
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular">RE<i id="icon" class="material-icons">keyboard_arrow_up</i>SERVED</span> <span class="light">is the online private auction for artists</span></h1>
+        </div>      
+      </div>
+      <div class="row picture-frame">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <div class="images">
+            <div class="image-wrapper" id="frame">
+              <img class="para-image img-responsive" src="Images/scrollframe2.png">
+            </div>
+            <div class="image-wrapper">
+              <img class="para-image img-responsive" id="frameImages" src="Images/testFrame2.png">
+            </div>
+          </div>
+        </div>          
+      </div>
+      <!-- <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <div class="images">
+            <div class="image-wrapper" id="canvas">
+              <img class="img-responsive" src="Images/canvas.png">
+            </div>
+            <div class="image-wrapper" id="paintsplash">
+              <img class="img-responsive" src="Images/paintSplash.png">
+            </div>
+          </div>
+        </div>      
+      </div> -->
+    </section>
+    <!-- section 2 -->
+    <section class="info-section" id="info-sec-2">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="light">We understand pricing is hard. Set your starting price
+            and watch your work rise in value</span></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular" style="font-size: 25vh;">$</span></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular">RE<i id="info-icon" class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+        </div>      
+      </div>
+    </section>
+      <div id="pinContainer">
+        <div id="slideContainer">
+      <!-- section 3 -->
+      <section class="info-section panel" id="info-sec-3">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="light">Simply sign up through our application portal and your
+              account will be reviewed by our team.</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+              chrome_reader_mode
+              </i></span></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+      <!-- section 4 -->
+      <section class="info-section panel" id="info-sec-4">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="light">Accepted applicants can upload pieces available
+              for 24-72 hours, accept bids on all works.</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+              schedule
+              </i></span></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+      <!-- section 5 -->
+      <section class="info-section panel" id="info-sec-5">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="light">Simply add your tag (#) to your social channels and
+              watch your customers bid.</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+              sms_failed
+              </i></span></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+        </div>
+      </div>
+
+    <!-- section 6 -->
+    <section class="info-section" id="info-sec-6">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="light">All bids pre-authorized with PayPal to ensure
+            secured biddings.</span></h1>            
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+            vpn_lock
+            </i></span></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+        </div>      
+      </div>
+    </section>
+    <div id="pinContainer2">
+      <!-- section 7 -->
+      <section class="info-section panel2" id="info-sec-7">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="light">It’s free to upload! 10% commission is taken
+              on all sold pieces</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+              local_offer
+              </i></span></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+      <!-- section 8 -->
+      <section class="info-section panel2" id="info-sec-8">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">What makes a successful applicant?</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+      <!-- section 9 -->
+      <section class="info-section panel2" id="info-sec-9">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="light">An account focused on your work. At least 70-30 <br>
+              (Work to Personal Posts)</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+              color_lens
+              </i></span></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+      <!-- section 10 -->
+      <section class="info-section panel2" id="info-sec-10">
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="light">A decent following on a social channel upward of 4k
+              followers is ideal but not always necessary.</span></h1>            
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+              call_missed_outgoing
+              </i></span></h1>
+          </div>      
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+            <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+          </div>      
+        </div>
+      </section>
+    </div>
+    <!-- section 11 -->
+    <section class="info-section" id="info-sec-11">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="light">Currently selling their work: ensures shipping
+            processes are manageable by the artist</span></h1>            
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+            shopping_cart
+            </i></span></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+        </div>      
+      </div>
+    </section>
+    <!-- section 12 -->
+    <section class="info-section" id="info-sec-12">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="light">We aim to change the way artists
+            create and sell their work.</span></h1>            
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+            group
+            </i></span></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+        </div>      
+      </div>
+    </section>
+    <!-- section 13 -->
+    <section class="info-section" id="info-sec-13">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="light">Create weekly / monthly and selling via auction at the
+            end of every month</span></h1>            
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular"><i class="material-icons" style="font-size: 25vh;color: unset;">
+            account_balance
+            </i></span></h1>
+        </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+          <h1 class="info-header"><span class="regular">RE<i class="material-icons">keyboard_arrow_up</i>SERVED</span></h1>
+        </div>      
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

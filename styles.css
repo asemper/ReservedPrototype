@@ -22,6 +22,7 @@ body {
     height: 100%;
 }
 
+
 h1,h2,h3,h4,h5 {
   font-family: 'Roboto', sans-serif !important;
   color: rgb(112, 112, 112);
@@ -35,6 +36,9 @@ h1,h2,h3,h4,h5 {
   font-weight: 400 !important;
 }
 
+.italic {
+  font-style: italic !important;
+}
 
 /* Global Styles  */
 
@@ -44,6 +48,17 @@ body {
   height: 100%;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 0 10px rgba(182, 181, 181, 0.8);
+  z-index: 100;
+}
+
 
 /* Template Styles */
 
@@ -51,6 +66,14 @@ body {
 
 
 /* Page Styles */
+
+
+/* ---------------------------------Main Page Styles---------------------------------------- */
+.header {
+  position: sticky;
+    top: 0%;
+    z-index: 100;
+}
 
 .main-header {
     text-align: center;
@@ -113,6 +136,10 @@ body {
   top: 50%;
 }
 
+.main-section {
+  position: relative;
+}
+
 /* Information Section  */
 
 .info-header {
@@ -124,6 +151,174 @@ body {
 .info-header .material-icons {
   color: rgb(68, 216, 68);
   font-size: 2.5vw;
+}
+
+.info-section {
+  height: 100vh;
+  opacity: 0;
+  /* transform:translateX(20px); */
+  transition: all 1s ease-out;
+  background-color: white;
+}
+
+.info-section.fade-in {
+  opacity: 1;
+  transform:translateX(0px);
+}
+
+.info-section.slide-left{
+  transform:translateX(0px);
+}
+
+#info-sec-1, #info-sec-6 {
+  box-shadow: 0 -10px 16px -4px #e2e2e2;
+  opacity: 1;
+  padding-top: 20vh;
+}
+
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+}
+#slideContainer {
+  width: 400%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+}
+.panel {
+  height: 100%;
+  width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+  float: left;
+}
+
+.panel2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* parllax picture frame  */
+
+.picture-frame {
+  padding-top: 25vh;
+}
+
+.para-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.images #frame {
+  /* position: relative; */
+  z-index: 1;
+} 
+
+.image #frameImages img {
+  transition: all .5s ease-out;
+}
+
+
+.images {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  top: -10%;
+}
+
+.image-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------Search Page Styles----------------------------------- */
+
+.brand-header {
+  font-size: 22px;
+  text-align: center;
+}
+
+.brand-header .material-icons {
+  color: rgb(68, 216, 68);
+  font-size: 22px;
+}
+
+
+.nav-search {
+  border-radius: 0px;
+  border-color: #7c7b7b;
+  border-width: 2px;
+  height: 45px;
+  width: 50%;
+  margin: auto;
+}
+
+.nav-search input[type='text'] {
+background-image: url(images/iconSearch.png);
+background-position: 7px 7px;
+background-repeat: no-repeat;
+}
+
+.nav-search::placeholder {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.nav-search:focus {
+  border-color: #898888 ;
+}
+
+.nav-search-label::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  height: calc(calc(2.25rem + 2px) - 1px * 2);
+  padding: .375rem .75rem;
+  color: #495057;
+}
+
+.nav-two {
+  padding: 5vh;
+}
+
+.nav-two a {
+  text-decoration: none;
+}
+
+.nav-two .burger-menu-button {
+  padding:0px;
+}
+
+.search-criteria {
+  font-style: italic;
+}
+
+.search-item {
+  padding-bottom: 20px;
+}
+
+.search-item-content {
+  padding-bottom: 10px;
+}
+
+.search-item-content .img-wrapper img{
+  height: 100%;
+  width: 100%;
+}
+
+.search-item-content .img-wrapper {
+  border: 1.5px solid black;
+}
+
+.item-price {
+  font-style:italic;
 }
 
 /* Custom Styles */
@@ -199,3 +394,4 @@ body {
 .sidenav .menu-item .material-icons {
   font-size: 20px;
 }
+
