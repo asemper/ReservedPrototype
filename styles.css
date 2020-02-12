@@ -90,7 +90,7 @@ body::before {
 .main-search {
     border-radius: 0px;
     border-color:#7c7b7b;
-    border-width: 2px;
+    border-width: 1.5px;
     height: 5rem;
     /* background: url(images/iconSearch.png) no-repeat scroll 7px 7px;
     background-position: right; */
@@ -124,11 +124,16 @@ body::before {
 
 }
 
+.search-btn {
+  visibility: hidden;
+}
+
 .content-wrapper {
   width: 100%;
   height: 100%;
 }
-.content-wrapper .container {
+
+.home-content-wrapper .home-content {
   padding: 15px 25px;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -239,6 +244,7 @@ body::before {
 .brand-header {
   font-size: 22px;
   text-align: center;
+  font-weight: 300;
 }
 
 .brand-header .material-icons {
@@ -246,13 +252,37 @@ body::before {
   font-size: 22px;
 }
 
+.nav-search input {
+  border-radius: 0px;
+  border: 1.5px solid;
+  border-right: 0px;
+}
 
-.nav-search {
+.nav-search .material-icons{
+  font-size: unset;
+}
+
+.nav-search .form-control{
+  height: unset;
+  color: unset;
+}
+
+.nav-search .btn-default {
+  color: unset;
+  border-radius: 0px;
+  border-left: 0px;
+  border-top:1.5px solid rgb(112, 112, 112);
+  border-right:1.5px solid  rgb(112, 112, 112);
+  border-bottom:1.5px solid  rgb(112, 112, 112);
+}
+
+
+/* .nav-search {
   border-radius: 0px;
   border-color: #7c7b7b;
-  border-width: 2px;
+  border-width: 1.5px;
   height: 45px;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
@@ -282,7 +312,7 @@ background-repeat: no-repeat;
   height: calc(calc(2.25rem + 2px) - 1px * 2);
   padding: .375rem .75rem;
   color: #495057;
-}
+} */
 
 .nav-two {
   padding: 5vh;
@@ -314,12 +344,268 @@ background-repeat: no-repeat;
 }
 
 .search-item-content .img-wrapper {
-  border: 1.5px solid black;
+  border: 1.5px solid;
+}
+
+.search-item:hover {
+  cursor: pointer;
+}
+
+.search-item-content a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* ----------------------------Item Page Styles----------------------------------- */
+
+.main-image-wrapper {
+  padding-bottom: 10px;
+}
+
+.main-image {
+  height: 65vh;
+  overflow: hidden;
+  border: 1.5px solid;
+}
+
+.sub-image-wrapper {
+  padding-top: 10px;
+}
+
+.sub-image {
+  height: 20vh;
+  overflow: hidden;
+  border: 1.5px solid;
+}
+
+.item-title {
+  font-style: italic;
+}
+
+.item-title h1 {
+  font-size: 46px;
+}
+
+.item-description-wrapper{
+  padding-top: 50px;
+}
+
+.item-description {
+  padding-top: 10px;
+  border: 1.5px solid;
+}
+
+.item-description-text {
+  padding: 10px;
+  font-style: italic;
 }
 
 .item-price {
-  font-style:italic;
+  text-align: center;
 }
+
+.item-price h1 {
+  font-size: 46px;
+}
+
+.item-btn-row {
+  padding-top: 25px;
+}
+
+.btn-bid-wrapper, .btn-contact-wrapper {
+  text-align: center;
+}
+
+.btn-bid, .btn-contact {
+  border: 1.5px solid;
+  border-radius: 0px;
+}
+
+.btn-bid .material-icons {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(68, 216, 68);
+}
+
+.btn-contact .material-icons {
+  font-size: 40px;
+}
+
+.message-card-body {
+  padding: 15px;
+  font-weight: 300;
+}
+
+.successful-bid {
+  text-align: center;
+}
+
+
+.success-bid {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.success-bid .material-icons {
+  font-size: 9rem;
+  color: rgb(68, 216, 68);
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+
+
+/* ----------------------------Artist Summary Page Styles----------------------------------- */
+
+
+.summary-item {
+  padding-bottom: 20px;
+}
+
+.summary-item-content {
+  padding-bottom: 10px;
+}
+
+.summary-item-content .img-wrapper img{
+  max-height: 200px;
+  min-height: 200px;
+}
+
+.summary-item-content .img-wrapper {
+  border: 1.5px solid;
+}
+
+.summary-item-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.add-art .material-icons {
+  font-size: 20rem;
+  text-align: center;
+}
+
+.add-art .img-wrapper {
+  max-height: 200px;
+  min-height: 200px;
+  display: inline-block;
+}
+
+
+.message-accordion {
+  border:1.5px solid;
+}
+
+.message-card {
+  border-bottom: 1.5px solid;
+}
+
+.message-date {
+  padding: 20px;
+}
+
+.btn-link {
+  color: unset;
+}
+
+.btn-link:hover {
+  text-decoration: none !important;
+}
+
+.artist-title, .pieces-active, .items-sold, .items-profit {
+  text-align: center;
+}
+
+.pieces-active h1, .items-sold h1 {
+  font-size: 9rem;
+  font-weight: bold;
+}
+
+.items-profit h1 {
+  font-weight: bold;
+}
+
+
+
+/* ----------------------------Add Item Page Styles----------------------------------- */
+
+
+
+.add-item-content {
+  width: 100%;
+  border: 1.5px solid;
+}
+
+.add-item-content::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.add-item-form input, .add-item-form select, .add-item-form textarea {
+  width: 100%;
+  border-width: 1.5px;
+  border-style: solid;
+  color: rgb(112, 112, 112);
+  border-color: rgb(112, 112, 112);
+}
+
+.add-item-form input, .add-item-form select {
+  height: 4vh;
+}
+
+.add-item-form textarea {
+  width: 100%;
+  height: 30vh;
+  resize: none;
+}
+
+.add-item-form textarea::placeholder {
+  padding: 10px;
+  font-style: italic;
+}
+
+.add-item-form select {
+  margin-bottom: 10px;
+}
+
+.add-item-form .bottom-row {
+  padding-top:30px;
+}
+
+.add-item-form .col-md-4,.add-item-form .col-md-3  {
+  padding-left: 0 !important;
+}
+
+.btn-upload-wrapper {
+  padding-top: 40px;
+}
+
+.btn-upload {
+  color: #d0cfcf;
+  background-color: grey;
+  font-style: italic;
+  border-radius: 0px;
+  width: 25%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.summary-item-content a {
+  text-decoration: none;
+  color: unset;
+}
+
+
+
+
 
 /* Custom Styles */
 

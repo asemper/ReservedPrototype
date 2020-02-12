@@ -22,14 +22,18 @@
             <div class="container-fluid">
               <div class="row nav-two">
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <h5 class="brand-header"><span class="light">RE<i id="icon" class="material-icons">keyboard_arrow_up</i>SERVED</span></h5>
+                    <a href="./index.html">
+                        <h5 class="brand-header"><span>RE<i id="icon" class="material-icons">keyboard_arrow_up</i>SERVED</span></h5>
                     </a>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <div class="form-group">
-                        <input type="search" placeholder="#BryantGiles" class="form-control nav-search" id="navSearch">
-                        <label class="nav-search-label"></label>
+                    <div class="input-group nav-search">
+                        <input type="text" class="form-control" aria-label="...">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default" type="button">
+                            <i class="material-icons">search</i>
+                          </button>
+                        </div>
                       </div>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -47,11 +51,11 @@
           </nav> -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">keyboard_arrow_right</i></a>
-        <a class="menu-item" href="#">sign up<i class="material-icons pull-right">how_to_reg</i></a>
-        <a class="menu-item" href="#">log in<i class="material-icons pull-right">exit_to_app</i></a>
+        <a class="menu-item" href="./artistsummary.html">my profile<i class="material-icons pull-right">person</i></a>
         <a class="menu-item" href="#">FAQ<i class="material-icons pull-right">help_outline</i></a>
         <a class="menu-item" href="#">Order Status<i class="material-icons pull-right">list_alt</i></a>
         <a class="menu-item" href="#">Contact<i class="material-icons pull-right">chat_bubble_outline</i></a>
+        <a class="menu-item" href="#">log out<i class="material-icons pull-right">exit_to_app</i></a>
       </div>
     </header>
     <!-- Main Content -->
@@ -61,19 +65,35 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        Big Image
+                        <div class="main-image-wrapper">
+                            <div class="main-image">
+                                <img class="img-responsive" src="./Images/mainImg.png" height="200">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-4">
-                            Image 2
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="sub-image-wrapper">
+                                <div class="sub-image">
+                                    <img class="img-responsive" src="./Images/mainImg.png">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            Image 3
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="sub-image-wrapper">
+                                <div class="sub-image">
+                                    <img class="img-responsive" src="./Images/mainImg.png">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            Image 4
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="sub-image-wrapper">
+                                <div class="sub-image">
+                                    <img class="img-responsive" src="./Images/mainImg.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,37 +101,103 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                    Garden of Truth
+                        <div class="item-title">
+                            <h1>Garden of Truth</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                    Date
+                        <div class="item-date">
+                            <p class="italic">4.12.2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row item-description-wrapper">
+                    <div class="col-md-12">
+                        <div>
+                            <p>Description</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                    Description :
+                        <div class="item-description">
+                            <p class="item-description-text">Bryant Giles Garden of Truth is a Chicago-bred artist and designer who puts as much artistry into his outfits as he does his canvases. "Fashoin and art both
+                                equally have my heart" he says one day on the phone from the Good Details gallery. 12x18in. Ink on Canvas.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                    lorem ipsum 
+                <div class="row item-btn-row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <div class="btn-bid-wrapper center-block">
+                            <div class="btn btn-bid" data-toggle="modal" data-target="#exampleModalCenter">
+                                <i id="icon" class="material-icons">keyboard_arrow_up</i>
+                            </div>
+                            <div>
+                                <h5>Bid</h5>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        Bid Button
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <div class="item-price-wrapper">
+                            <div class="item-price">
+                                <h1>$583</h1><h5>Current Bid</h5>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        Price
-                    </div>
-                    <div class="col-md-4">
-                        Contact Button
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <div class="btn-contact-wrapper center-block">
+                            <div class="btn btn-contact">
+                                <i id="icon" class="material-icons">email</i>
+                            </div>
+                            <div>
+                                <h5>Contact</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="brand-header"><span>RE<i id="icon" class="material-icons">keyboard_arrow_up</i>SERVED</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body successful-bid">
+                    <div>
+                        <h1 class="italic">Congratulations</h1>
+                    </div>
+                    <div>
+                        <p class="italic">You just acquired 'Garden of Truth' from Bryant Giles</p>
+                    </div>
+                    <div>
+                        <div class="success-bid-wrapper italic">
+                            <div class="success-bid center-block">
+                                <i id="icon" class="material-icons">done</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="italic">Winning Bid</p>
+                    </div>
+                    <div>
+                        <h1 class="italic">$607</h1>
+                    </div>
+                    <div>
+                        <p class="italic">We will notify you shortly when your item has shipped</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

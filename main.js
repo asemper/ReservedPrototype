@@ -150,6 +150,20 @@ $( document ).ready(function() {
     }
   });
 
+  var input = document.getElementById("main-search");
+  // Navigate search on enter
+  input.addEventListener("keyup", function(event) {
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      //document.getElementById("search-btn").click();
+      //alert("button clicked");
+      window.location.href = "./search.html";
+    }
+  });
+
 });
 
 function animateCSS(element, animationName, callback) {
