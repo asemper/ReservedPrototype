@@ -339,8 +339,8 @@ background-repeat: no-repeat;
 }
 
 .search-item-content .img-wrapper img{
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 200px;
 }
 
 .search-item-content .img-wrapper {
@@ -532,7 +532,9 @@ background-repeat: no-repeat;
 
 /* ----------------------------Add Item Page Styles----------------------------------- */
 
-
+.add-item-page-wrapper {
+  padding-top: 50px;
+}
 
 .add-item-content {
   width: 100%;
@@ -543,6 +545,10 @@ background-repeat: no-repeat;
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+
+.add-item-content .add-btn .material-icons{
+  font-size: 15rem;
 }
 
 .add-item-form input, .add-item-form select, .add-item-form textarea {
