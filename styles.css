@@ -420,6 +420,7 @@ background-repeat: no-repeat;
   border: 1.5px solid;
   border-radius: 0px;
   width: 65%;
+
 }
 
 .btn-bid .material-icons {
@@ -458,6 +459,29 @@ background-repeat: no-repeat;
   border-bottom: 0px;
 }
 
+
+.modal-dialog {
+  height: 80% !important;
+  padding-top:10%;
+}
+
+.modal-content {
+  height: 100% !important;
+  overflow:visible;
+}
+
+.modal-body {
+  height: 80%;
+  overflow: auto;
+}
+
+button.close {
+  padding-right: 10px;
+}
+
+.close {
+  font-size:35px;
+}
 
 /* ----------------------------Artist Summary Page Styles----------------------------------- */
 
