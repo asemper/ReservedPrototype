@@ -419,6 +419,7 @@ background-repeat: no-repeat;
 .btn-bid, .btn-contact {
   border: 1.5px solid;
   border-radius: 0px;
+  width: 65%;
 }
 
 .btn-bid .material-icons {
@@ -557,7 +558,9 @@ background-repeat: no-repeat;
   border-style: solid;
   color: rgb(112, 112, 112);
   border-color: rgb(112, 112, 112);
+  padding-left: 10px;
 }
+
 
 .add-item-form input, .add-item-form select {
   height: 4vh;
@@ -576,6 +579,7 @@ background-repeat: no-repeat;
 
 .add-item-form select {
   margin-bottom: 10px;
+  text-align-last: center;
 }
 
 .add-item-form .bottom-row {
