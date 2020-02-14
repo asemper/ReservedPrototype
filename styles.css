@@ -59,6 +59,10 @@ body::before {
   z-index: 100;
 }
 
+.input-group {
+  z-index: 0;
+}
+
 
 /* Template Styles */
 
@@ -78,7 +82,7 @@ body::before {
 .main-header {
     text-align: center;
     padding-bottom: 25px;
-    font-size: 3vw;
+    font-size: 40px;
     font-weight: 100;
 }
 
@@ -715,3 +719,28 @@ button.close {
   font-size: 20px;
 }
 
+
+
+/* ----------------------------Add Item Page Styles----------------------------------- */
+
+
+
+
+@media screen and (max-width: 600px) {
+  .main-header {
+    font-size: 30px;
+    width: 225px;
+  }
+
+  .main-header .material-icons {
+    font-size: 27px;
+  }
+
+  .info-header {
+    font-size: 30px;
+  }
+
+  .info-header .material-icons {
+    font-size: 27px;
+  }
+}
