@@ -459,6 +459,10 @@ background-repeat: no-repeat;
   color: rgb(68, 216, 68);
 }
 
+.contact-modal-body .add-item-form textarea {
+  height: 20vh;
+}
+
 .modal-header {
   border-bottom: 0px;
 }

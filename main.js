@@ -13,6 +13,10 @@ $( document ).ready(function() {
     }
   });
 
+  $( ".btn-search" ).click(function() {
+    window.location.href = "./search.html";
+  });
+
   var input = document.getElementById("main-search");
   var input2 = document.getElementById("sm-nav-search");
 

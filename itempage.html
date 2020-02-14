@@ -30,7 +30,7 @@
                     <div class="input-group nav-search">
                         <input type="text" id="sm-nav-search" class="form-control" aria-label="...">
                         <div class="input-group-btn">
-                          <button class="btn btn-default" type="button">
+                          <button class="btn btn-default btn-search" type="button">
                             <i class="material-icons">search</i>
                           </button>
                         </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                         <div class="btn-contact-wrapper center-block">
-                            <div class="btn btn-contact">
+                            <div class="btn btn-contact"  data-toggle="modal" data-target="#exampleModal">
                                 <i id="icon" class="material-icons">email</i>
                             </div>
                             <div>
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <!-- Modal -->
+        <!-- Winning Bid Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -197,6 +197,33 @@
             </div>
         </div>
 
+        <!--Contact Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <h5 class="brand-header"><span>RE<i id="icon" class="material-icons">keyboard_arrow_up</i>SERVED</span></h5>
+                    </div>
+                    <div class="modal-body contact-modal-body">
+                        <div class="add-item-form">
+                            <p class="pull-left">Subject</p>
+                            <div class="italic form-group">
+                                <div class="name-field">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <p class="pull-left">Message</p>
+                            <div class="form-group">
+                                <textarea placeholder="Type your message here"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
 
       </div>
     </div>
