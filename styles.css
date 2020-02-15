@@ -19,7 +19,15 @@ Font Family: Helvetica Neue
 body {
     font-family: 'Roboto', sans-serif !important;
     color:rgb(112, 112, 112);
-    height: 100%;
+    background-color: #fffae36b;
+    background-image: url(Images/canvas-bck.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -143,6 +151,10 @@ body::before {
   height: 100%;
 }
 
+.home-content-wrapper {
+  background-color: white;
+}
+
 .home-content-wrapper .home-content {
   padding: 15px 25px;
   position: absolute;
@@ -170,9 +182,9 @@ body::before {
 
 .info-section {
   height: 100vh;
-  opacity: 0;
+  opacity: 1;
   /* transform:translateX(20px); */
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
   background-color: white;
 }
 

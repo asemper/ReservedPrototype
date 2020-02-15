@@ -27,7 +27,7 @@ $( document ).ready(function() {
     $('.info-section').each(function(){
       var sectionFadeScene = new ScrollMagic.Scene({
         triggerElement: this,
-        duration: '101%'
+        duration: '110%'
       })
       .setClassToggle(this, 'fade-in') // add class
       .addIndicators({
@@ -167,7 +167,7 @@ $( document ).ready(function() {
 
 
 
-              // ---------------------------
+              // -------------wiper transition sec 7,8,9--------------
 
 
               
