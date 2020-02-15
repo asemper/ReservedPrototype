@@ -192,7 +192,48 @@ $( document ).ready(function() {
                   .addIndicators() // add indicators (requires plugin)
                   .addTo(controller);
               });
+
+
+// ---------------------Wiper transition for sec 11,12,13---------------------------
   
+              
+          $(function () { // wait for document ready
+            // init
+            var controller = new ScrollMagic.Controller();
+
+            // define movement of panels
+            var wipeAnimation = new TimelineMax()
+              .fromTo("section.panel3.info-sec-11", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
+              .fromTo("section.panel3.info-sec-12",    1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
+              .fromTo("section.panel3.info-sec-13", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+            // create scene to pin and link animation
+            new ScrollMagic.Scene({
+                triggerElement: "#pinContainer3",
+                triggerHook: "onLeave",
+                duration: "300%"
+              })
+              .setPin("#pinContainer3")
+              .setTween(wipeAnimation)
+              .addIndicators() // add indicators (requires plugin)
+              .addTo(controller);
+          });
+
+          $(function(){
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+                var os = $('#info-sec-1').offset().top; // pixels to the top of div1
+                var ht = $('#info-sec-1').height(); // height of div1 in pixels
+                // if you've scrolled further than the top of div1 plus it's height
+                // change the color. either by adding a class or setting a css property
+                if(scroll > os + ht){
+                    $('.para-image').addClass('para-hidden');
+                } else {
+                  $('.para-image').removeClass('para-hidden')
+                }
+            });
+        });
+
   });
   
   function animateCSS(element, animationName, callback) {

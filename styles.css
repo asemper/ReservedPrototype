@@ -197,6 +197,10 @@ body::before {
   transform:translateX(0px);
 }
 
+#info-sec-1 {
+  margin-bottom: 20vh;
+}
+
 #info-sec-1, #info-sec-6 {
   box-shadow: 0 -10px 16px -4px #e2e2e2;
   opacity: 1;
@@ -212,6 +216,12 @@ body::before {
 }
 
 #pinContainer2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#pinContainer3 {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -233,6 +243,12 @@ body::before {
   position: absolute;
 }
 
+.panel3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 /* parllax picture frame  */
 
 .picture-frame {
@@ -243,10 +259,14 @@ body::before {
   /* margin-left: auto;
   margin-right: auto;
   display: block; */
-  /* position: fixed;
+  position: fixed;
   right: -20px;
   bottom: 0px;
-  width: 45vw; */
+  width: 45vw;
+}
+
+.para-hidden  {
+  opacity: 0;
 }
 
 .images #frame {
