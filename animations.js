@@ -145,11 +145,11 @@ $( document ).ready(function() {
               .to("#slideContainer", 1,   {x: "-25%"})	// move in to first panel
               .to("#slideContainer", 0.5, {z: 0})				// move back to origin in 3D space
               // animate to third panel
-              .to("#slideContainer", 0.5, {z: -150, delay: 1})
+              .to("#slideContainer", 0.5, {z: -150, delay: 2})
               .to("#slideContainer", 1,   {x: "-50%"})
               .to("#slideContainer", 0.5, {z: 0})
               // animate to forth panel
-              .to("#slideContainer", 0.5, {z: -150, delay: 1})
+              .to("#slideContainer", 0.5, {z: -150, delay: 2})
               .to("#slideContainer", 1,   {x: "-75%"})
               .to("#slideContainer", 0.5, {z: 0});
   
@@ -163,42 +163,35 @@ $( document ).ready(function() {
               .setTween(wipeAnimation)
               .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
-  // --------------------------------------------------------
-        
-    //close Nav on off-click
-    $( ".content-wrapper" ).click(function() {
-      if ($(".sidenav").width() > 0) {
-        closeNav();
-      }
-    });
-  
-    var input = document.getElementById("main-search");
-    var input2 = document.getElementById("sm-nav-search");
-    
-    // Navigate search on enter
-    input.addEventListener("keyup", function(event) {
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.keyCode === 13) {
-        // Cancel the default action, if needed
-        event.preventDefault();
-        // Trigger the button element with a click
-        //document.getElementById("search-btn").click();
-        //alert("button clicked");
-        window.location.href = "./search.html";
-      }
-    });
-  
-    input2.addEventListener("keyup", function(event) {
-      // Number 13 is the "Enter" key on the keyboard
-      if (event.keyCode === 13) {
-        // Cancel the default action, if needed
-        event.preventDefault();
-        // Trigger the button element with a click
-        //document.getElementById("search-btn").click();
-        //alert("button clicked");
-        window.location.href = "./search.html";
-      }
-    });
+
+
+
+
+              // ---------------------------
+
+
+              
+              $(function () { // wait for document ready
+                // init
+                var controller = new ScrollMagic.Controller();
+            
+                // define movement of panels
+                var wipeAnimation = new TimelineMax()
+                  .fromTo("section.panel2.info-sec-7", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+                  .fromTo("section.panel2.info-sec-8",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+                  .fromTo("section.panel2.info-sec-9", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+            
+                // create scene to pin and link animation
+                new ScrollMagic.Scene({
+                    triggerElement: "#pinContainer2",
+                    triggerHook: "onLeave",
+                    duration: "300%"
+                  })
+                  .setPin("#pinContainer2")
+                  .setTween(wipeAnimation)
+                  .addIndicators() // add indicators (requires plugin)
+                  .addTo(controller);
+              });
   
   });
   
@@ -215,17 +208,6 @@ $( document ).ready(function() {
   
     node.addEventListener('animationend', handleAnimationEnd)
   }
-  
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    animateCSS('.sidenav .material-icons', 'rotateIn')
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    animateCSS('.sidenav .material-icons', 'rotateOut')
-  }
-  
   
   
   
