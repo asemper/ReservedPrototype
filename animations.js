@@ -30,12 +30,6 @@ $( document ).ready(function() {
         duration: '110%'
       })
       .setClassToggle(this, 'fade-in') // add class
-      .addIndicators({
-        name:'fade-scene 3',
-        colorTrigger:'black',
-        colorStart:'green',
-        colorStart:'red'
-      })
       .addTo(controller);
     });
   
@@ -118,7 +112,6 @@ $( document ).ready(function() {
       // build bird scene
       var scene = new ScrollMagic.Scene({triggerElement: "#info-sec-1", duration: '100%'})
                       .setTween(tween)
-                      .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
             
   
@@ -128,12 +121,6 @@ $( document ).ready(function() {
        duration: '90%'
      })
      .setClassToggle('#info-sec-2', 'slide-left') // add class
-     .addIndicators({
-       name:'slide in',
-       colorTrigger:'black',
-       colorStart:'green',
-       colorStart:'red'
-     })
      .addTo(controller);
   
   // info sec 3,4,5
@@ -161,7 +148,6 @@ $( document ).ready(function() {
               })
               .setPin("#pinContainer")
               .setTween(wipeAnimation)
-              .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
 
 
@@ -189,7 +175,6 @@ $( document ).ready(function() {
                   })
                   .setPin("#pinContainer2")
                   .setTween(wipeAnimation)
-                  .addIndicators() // add indicators (requires plugin)
                   .addTo(controller);
               });
 
@@ -215,7 +200,6 @@ $( document ).ready(function() {
               })
               .setPin("#pinContainer3")
               .setTween(wipeAnimation)
-              .addIndicators() // add indicators (requires plugin)
               .addTo(controller);
           });
 
