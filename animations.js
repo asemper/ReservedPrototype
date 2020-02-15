@@ -43,38 +43,60 @@ $( document ).ready(function() {
     var pintIntro = new ScrollMagic.Scene({
       triggerElement:'.content-wrapper',
       triggerHook:0,
-      duration:'30%'
-    })
-    .setPin('.content-wrapper',{pushFollowers:false})
-    .addTo(controller)
-    //pin again
-    var pintIntroScene2 = new ScrollMagic.Scene({
-      triggerElement:'#info-sec-1',
-      triggerHook:0,
       duration:'100%'
     })
     .setPin('.content-wrapper',{pushFollowers:false})
     .addTo(controller)
+    //pin again
+    // var pintIntroScene2 = new ScrollMagic.Scene({
+    //   triggerElement:'#info-sec-1',
+    //   triggerHook:0,
+    //   duration:'100%'
+    // })
+    // .setPin('.content-wrapper',{pushFollowers:false})
+    // .addTo(controller)
   
     //Bird Scene
+    // var images = [
+    //   "Images/bird-seq-1.png",
+    //   "Images/bird-seq-2.png",
+    //   "Images/bird-seq-3.png",
+    //   "Images/bird-seq-4.png",
+    //   "Images/bird-seq-5.png",
+    //   "Images/bird-seq-6.png",
+    //   "Images/bird-seq-7.png",
+    //   "Images/bird-seq-8.png",
+    //   "Images/bird-seq-1.png",
+    //   "Images/bird-seq-2.png",
+    //   "Images/bird-seq-3.png",
+    //   "Images/bird-seq-4.png",
+    //   "Images/bird-seq-5.png",
+    //   "Images/bird-seq-6.png",
+    //   "Images/bird-seq-7.png",
+    //   "Images/bird-seq-8.png",
+    // ];
+
     var images = [
-      "Images/bird-seq-1.png",
-      "Images/bird-seq-2.png",
-      "Images/bird-seq-3.png",
-      "Images/bird-seq-4.png",
-      "Images/bird-seq-5.png",
-      "Images/bird-seq-6.png",
-      "Images/bird-seq-7.png",
-      "Images/bird-seq-8.png",
-      "Images/bird-seq-1.png",
-      "Images/bird-seq-2.png",
-      "Images/bird-seq-3.png",
-      "Images/bird-seq-4.png",
-      "Images/bird-seq-5.png",
-      "Images/bird-seq-6.png",
-      "Images/bird-seq-7.png",
-      "Images/bird-seq-8.png",
-    ];
+      "Images/flower1.png",
+      "Images/flower2.png",
+      "Images/flower3.png",
+      "Images/flower4.png",
+      "Images/flower5.png",
+      "Images/flower6.png",
+      "Images/flower7.png",
+      "Images/flower8.png",
+      "Images/flower9.png",
+      "Images/flower10.png",
+      "Images/flower11.png",
+      "Images/flower12.png",
+      "Images/flower12.png",
+      "Images/flower13.png",
+      "Images/flower14.png",
+      "Images/flower15.png",
+      "Images/flower16.png",
+      "Images/flower17.png",
+      "Images/flower18.png",
+    ]
     
       // TweenMax can tween any property of any object. We use this object to cycle through the array
       var obj = {curImg: 0};

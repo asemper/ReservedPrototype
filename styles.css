@@ -211,13 +211,15 @@ body::before {
 /* parllax picture frame  */
 
 .picture-frame {
-  padding-top: 25vh;
+  /* padding-top: 25vh; */
 }
 
 .para-image {
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: block; */
+  position: fixed;
+  right: -20;
 }
 
 .images #frame {
