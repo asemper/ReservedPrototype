@@ -53,6 +53,40 @@ $( document ).ready(function() {
 
   }
 
+
+// ---------- Count up animation for artist summary page ---------
+
+        var options = { 
+          duration: 20, 
+          useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+            prefix: '$',
+            suffix: ''
+        };
+
+          $('.countupthis').each(function() {
+            var num = $(this).attr('numx'); //end count
+            var nuen = $(this).text();
+            if (nuen === "") {
+              nuen = 0;
+            }
+            var counts = new CountUp(this, nuen, num, 0, 5, options);
+            counts.start();
+          });
+
+
+          // $("input").keydown(function(e) {
+          //   var oldvalue=$(this).val();
+          //   var field=this;
+          //   setTimeout(function () {
+          //       if(field.value.indexOf('#') !== 0) {
+          //           $(field).val(oldvalue);
+          //       } 
+          //   }, 1);
+          //   });
+
 });
 
 function openNav() {
@@ -66,4 +100,12 @@ function closeNav() {
 }
 
 
+$.fn.isInViewport = function () {
+  let elementTop = $(this).offset().top;
+  let elementBottom = elementTop + $(this).outerHeight();
 
+  let viewportTop = $(window).scrollTop();
+  let viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
