@@ -1,8 +1,8 @@
 body {
     background-image: url(Images/canvas-bck.png);
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed; */
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
