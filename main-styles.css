@@ -45,3 +45,27 @@ body {
       background-image: url(Images/canvas-bck-mobile.png);
     }
 }
+
+
+@media (min-device-width : 320px) and (max-device-width : 568px)  { 
+  #pagebody {
+      background-attachment: scroll;
+      /* default height landscape*/
+      height: 320px;
+  }
+
+  .ipadfix{
+      height: 150px !important;
+  }
+  img.ipadfix{
+      width:100% !important; 
+      height:auto !important;
+  }
+}
+/* fix for the iphone */
+@media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
+  #pagebody {
+      /* default height landscape*/
+      height: 568px;
+  }
+} 
