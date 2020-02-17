@@ -13,7 +13,7 @@ body {
 
     body {
       background-image: url(Images/canvas-bck-mobile.png);
-      background-attachment:scroll
+      background-attachment:scroll;
     }
   
   }
