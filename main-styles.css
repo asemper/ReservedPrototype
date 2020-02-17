@@ -13,11 +13,12 @@ body {
 
     body {
       background-image: url(Images/canvas-bck-mobile.png);
+      background-attachment:scroll
     }
   
   }
 
-
+/* 
   @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -46,10 +47,8 @@ body {
     }
 }
 
-/* fix for the iphone */
 @media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
   body {
-      /* default height landscape*/
       height: 568px;
   }
-} 
+}  */
