@@ -99,7 +99,7 @@ body::before {
 .main-search {
     border-radius: 0px;
     border-color:#7c7b7b;
-    border-width: 1.5px;
+    border-width: 1px;
     height: 5rem;
     /* background: url(images/iconSearch.png) no-repeat scroll 7px 7px;
     background-position: right; */
@@ -112,8 +112,9 @@ body::before {
 }
 
 .main-search::placeholder {
-    font-size: 2.5rem;
+    font-size: 12px;
     margin-top: 10px;
+    opacity: 50%;
 }
 
 .main-search:focus {
@@ -370,6 +371,15 @@ background-repeat: no-repeat;
   padding:0px;
 }
 
+.burger-menu-button span {
+  display: block;
+  width: 35px;
+  height: 1px;
+  margin-bottom: 7px;
+  position: relative;
+  background-color: rgb(112, 112, 112);
+}
+
 .search-criteria {
   font-style: italic;
 }
@@ -549,6 +559,7 @@ button.close {
 
 .summary-item-content .img-wrapper {
   border: 1.5px solid;
+  overflow: hidden;
 }
 
 .summary-item-description {
