@@ -93,7 +93,7 @@ body::before {
 
 .main-header .material-icons {
     color: rgb(68, 216, 68);
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 
 .main-search {
@@ -164,12 +164,12 @@ body::before {
 .info-header {
   text-align: center;
   padding-bottom: 25px;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .info-header .material-icons {
   color: rgb(68, 216, 68);
-  font-size: 2.5vw;
+  font-size: 1.5vw;
 }
 
 .info-section {
@@ -178,6 +178,12 @@ body::before {
   /* transform:translateX(20px); */
   transition: all 0.2s ease-out;
   background-color: white;
+}
+
+.section-icon .material-icons {
+  color: unset;
+  font-size: 15vh;
+  padding-top: 50px;
 }
 
 .info-section.fade-in {
@@ -189,14 +195,18 @@ body::before {
   transform:translateX(0px);
 }
 
+.link-text {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
 #info-sec-1 {
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
 }
 
 #info-sec-1, #info-sec-6 {
   box-shadow: 0 -10px 16px -4px #e2e2e2;
   opacity: 1;
-  padding-top: 20vh;
 }
 
 #pinContainer {
